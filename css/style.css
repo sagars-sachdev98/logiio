@@ -37,3 +37,11 @@ p{
 h1, h2, h3, h4, h5, h6{
     color: white!important;
 }
+.moto li{
+    list-style-type: disc!important;
+    line-height: 2;
+    text-align: justify;
+}
+.motto-div{
+    padding: 30px;
+}

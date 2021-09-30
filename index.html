@@ -88,13 +88,21 @@
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  <span style="background: #bf66e5!important" id="language-selector">Language</span>
+                  <span
+                    style="background: #bf66e5 !important"
+                    id="language-selector"
+                    >Language</span
+                  >
                 </a>
 
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background: white;">
-                  <a class="dropdown-item" href="#">English</a>
-                  <a class="dropdown-item" href="#">हिंदी</a>
-                  <a class="dropdown-item" href="#">मराठी</a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownMenuLink"
+                  style="background: white"
+                >
+                  <a class="dropdown-item" onclick="langaugeEnglish()">English</a>
+                  <a class="dropdown-item" onclick="languageHindi()">हिंदी</a>
+                  <a class="dropdown-item" onclick="languageMarathi()">मराठी</a>
                 </div>
               </div>
 
@@ -124,17 +132,33 @@
       <div class="pl-5 pr-5" style="margin-top: 10%">
         <div class="row">
           <div class="col-lg-5 col-md-5 col-sm-6" style="margin-top: 10%">
-            <h2>What is Logiio?</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Accusantium ipsam reiciendis sed magni assumenda rerum fuga quo
-              repellat, nesciunt qui neque veniam dolores nihil quaerat.
-              Repudiandae, veritatis velit? Libero, deserunt.
+            <h2 id="solve-title">What does Logiio Solve?</h2>
+            <p class="text-justify" id="loggio-p1">
+              Logiio is a mobile application that is designed especially for you
+              to bring unique solutions and fulfillment of the orders, assuring
+              great quality, speed, and reasonable cost. It has been built with
+              keeping end-to-end logistics in mind and it aims to provide
+              various unique solutions for all the right needs of the pickup and
+              delivery of a courier that simplifies your life and makes it
+              easier for on-the-go orders and delivery of parcels.
             </p>
+            
           </div>
           <div class="col-lg-7 col-md-7 col-sm-6">
             <img src="img/lg-bg.png" class="text-center hero-img" alt="" />
           </div>
+        </div>
+        <div class="mt-3">
+          <p id="loggio-p2">
+            Logiio combines people, processes, and technology into one system
+            to get the best results from all sources. The ultimate objective
+            is to get maximum value from every division within the business
+            while providing the highest customer satisfaction.
+          </p>
+          <p id="loggio-p3">
+            Logiio saves your time by reducing the paperwork and saving
+            order-related details. It also helps for live tracking of orders.
+          </p>
         </div>
       </div>
       <section class="hero-welcome-message text-center">
@@ -491,6 +515,7 @@
     <script src="js/jquery.ajaxchimp.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/retina.min.js"></script>
+    <script src="js/service.js"></script>
   </body>
 
   <!-- Mirrored from csmthemes.com/themes/alpha/variants/variant-3/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Sep 2021 15:21:40 GMT -->

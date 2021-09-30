@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <!-- Mirrored from csmthemes.com/themes/alpha/variants/variant-3/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Sep 2021 15:15:06 GMT -->
-  <!-- Added by HTTrack --><meta
-    http-equiv="content-type"
-    content="text/html;charset=utf-8"
-  /><!-- /Added by HTTrack -->
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,6 +16,7 @@
       sizes="180x180"
       href="img/favicons/apple-touch-icon.png"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="icon"
       type="image/png"
@@ -73,12 +70,37 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#features">Features</a>
-              </li>
-              <li class="nav-item" >
+              <!-- <li class="nav-item">
                 <a
-                  class="btn btn-primary btn-modal"
+                  class="btn btn-primary btn-modal feature"
+                  href="#"
+                  >Language</a
+                >
+              </li> -->
+
+              <div class="dropdown show">
+                <a
+                  class="btn btn-secondary dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span style="background: #bf66e5!important" id="language-selector">Language</span>
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background: white;">
+                  <a class="dropdown-item" href="#">English</a>
+                  <a class="dropdown-item" href="#">हिंदी</a>
+                  <a class="dropdown-item" href="#">मराठी</a>
+                </div>
+              </div>
+
+              <li class="nav-item">
+                <a
+                  class="btn btn-primary btn-modal support"
                   href="#"
                   data-toggle="modal"
                   data-target="#contact-modal"
@@ -88,7 +110,6 @@
                   class="btn btn-primary btn-nav"
                   href="#hero-section"
                   role="button"
-                  
                   >Notify me</a
                 >
               </li>
@@ -102,7 +123,7 @@
       <!--welcome message-->
       <div class="pl-5 pr-5" style="margin-top: 10%">
         <div class="row">
-          <div class="col-lg-5 col-md-5 col-sm-6" style="margin-top: 10%;">
+          <div class="col-lg-5 col-md-5 col-sm-6" style="margin-top: 10%">
             <h2>What is Logiio?</h2>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -112,7 +133,7 @@
             </p>
           </div>
           <div class="col-lg-7 col-md-7 col-sm-6">
-            <img src="img/lg-bg.png" class="text-center hero-img" alt="">
+            <img src="img/lg-bg.png" class="text-center hero-img" alt="" />
           </div>
         </div>
       </div>

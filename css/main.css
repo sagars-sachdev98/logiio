@@ -203,7 +203,7 @@ strong { font-weight: 700; }
   width: 23px;
   height: 2px;
   border-radius: 1px;
-  background-color: bf66e5;
+  background-color: white;
   position: relative;
   transition: all 500ms ease-in-out;
 }

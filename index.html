@@ -56,7 +56,7 @@
           <a class="navbar-brand" href="#">
             <img class="logo" src="img/logo.svg" alt="Alpha"
           /></a>
-          <button
+          <!-- <button
             class="navbar-toggler"
             type="button"
             data-toggle="collapse"
@@ -67,7 +67,17 @@
           >
             <span class="icon-bar"></span> <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
+          </button> -->
+          <img
+            src="/img/menu.png"
+            alt=""
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            width="30px"
+          />
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <!-- <li class="nav-item">
@@ -243,7 +253,8 @@
             solves these problems for you.
           </p>
           <p id="detail-4">
-            If you are looking for the best logistics services then Logiio is your friend, indeed!
+            If you are looking for the best logistics services then Logiio is
+            your friend, indeed!
           </p>
         </div>
       </div>
@@ -251,8 +262,8 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              <h1>Open source media player</h1>
-              <h2>Coming soon on android and ios</h2>
+              <h1 id="join-wait">Join the waiting list</h1>
+              <h2 id="comming-soon">Coming soon on Android and IOS</h2>
 
               <!-- signup form-->
               <div class="signup-form row justify-content-center">
@@ -264,11 +275,15 @@
                         class="form-control"
                         placeholder="Enter your email"
                         required
-                        id="mc-email"
+                        id="email"
                         aria-label="Recipient's email"
                       />
-                      <button type="submit" class="btn btn-primary">
-                        Join the waiting list
+                      <button
+                        type="submit"
+                        class="btn btn-primary"
+                        id="join-btn"
+                      >
+                        Join
                       </button>
                     </div>
                     <div id="mc-error">
@@ -284,8 +299,13 @@
 
               <!-- signup form end-->
 
-              <img
+              <!-- <img
                 src="img/hero-img.svg"
+                alt="hero-img"
+                class="text-center hero-img"
+              /> -->
+              <img
+                src="img/logistics.png"
                 alt="hero-img"
                 class="text-center hero-img"
               />
@@ -302,7 +322,7 @@
 
     <!--Features-->
 
-    <section class="features section-spacing" id="features">
+    <!-- <section class="features section-spacing" id="features">
       <div class="container">
         <div class="row">
           <div class="col-lg-5">
@@ -319,50 +339,36 @@
           </div>
           <div class="col-lg-7">
             <ul class="row features-list text-center">
-              <!--features 1-->
               <li class="col-md-6">
                 <img src="img/feature-1.svg" alt="features" />
                 <h4>Gestures control</h4>
               </li>
-              <!--features 1 end-->
-
-              <!--features 2-->
               <li class="col-md-6">
                 <img src="img/feature-2.svg" alt="features" />
                 <h4>Supports subtitles</h4>
               </li>
-              <!--features 2 end-->
-
-              <!--Force next columns to break to new line at md breakpoint and up-->
               <li class="w-100 d-none d-md-block"></li>
-
-              <!--features 3-->
               <li class="col-md-6">
                 <img src="img/feature-3.svg" alt="features" />
                 <h4>Closed captions</h4>
               </li>
-              <!--features 3 end-->
-
-              <!--features 4-->
               <li class="col-md-6">
                 <img src="img/feature-4.svg" alt="features" />
                 <h4>Network streams</h4>
               </li>
-              <!--features 4 end-->
             </ul>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!--Features end-->
 
     <!--More Features-->
 
-    <section class="features-more section-spacing text-center">
+    <!-- <section class="features-more section-spacing text-center">
       <div class="container">
         <div class="row">
-          <!--More Features 1-->
 
           <div class="col-lg-4">
             <div class="features-more-wrapper">
@@ -375,10 +381,6 @@
             </div>
           </div>
 
-          <!--More Features 1 end-->
-
-          <!--More Features 2-->
-
           <div class="col-lg-4">
             <div class="features-more-wrapper">
               <h2>Chromecast</h2>
@@ -390,10 +392,6 @@
             </div>
           </div>
 
-          <!--More Features 2 end-->
-
-          <!--More Features 3-->
-
           <div class="col-lg-4">
             <div class="features-more-wrapper">
               <h2>Night Mode</h2>
@@ -404,18 +402,10 @@
               <img src="img/feature-more-3.svg" alt="more feature" />
             </div>
           </div>
-
-          <!--More Features 3 end-->
         </div>
       </div>
-    </section>
-
-    <!--More Features end-->
-
-    <!--CTA-->
-
+    </section> 
     <section class="cta section-spacing">
-      <!--CTA svg animation-->
 
       <svg
         width="100%"
@@ -439,7 +429,6 @@
           <path d="M 0, 60 S 200, -70, 400, 70, 800, -120, 1200 60" />
         </g>
       </svg>
-      <!--CTA svg animation end-->
 
       <div class="container">
         <div class="row">
@@ -458,9 +447,7 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <!--CTA end-->
+    </section> -->
 
     <!--Footer-->
 

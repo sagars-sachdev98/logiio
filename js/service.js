@@ -30,6 +30,12 @@ function langaugeEnglish() {
     document.getElementById("detail-2").innerHTML = "It helps you organize and manage all your details in a single place. It's easy to access and you can also track your orders on the go with this dedicated application.";
     document.getElementById("detail-3").innerHTML = "These days as per the situation of the Covid pandemic, it’s very difficult to find the best logistics service providers, Logiio solves these problems for you. ";
     document.getElementById("detail-4").innerHTML = "If you are looking for the best logistics services then Logiio is your friend, indeed!"
+
+    document.getElementById("join-wait").innerHTML="Join the waiting list";
+    document.getElementById("comming-soon").innerHTML="Coming soon on Android and IOS"
+    document.getElementById("join-btn").innerHTML = "Join"
+    document.getElementById('email').placeholder='Enter your email';
+    
 }
 
 function languageHindi() {
@@ -65,6 +71,11 @@ function languageHindi() {
     document.getElementById("detail-2").innerHTML = "यह आपके सभी विवरणों को एक ही स्थान पर व्यवस्थित और प्रबंधित करने में आपकी सहायता करता है। इसे एक्सेस करना आसान है और आप इस समर्पित एप्लिकेशन के साथ चलते-फिरते अपने ऑर्डर ट्रैक भी कर सकते हैं।";
     document.getElementById("detail-3").innerHTML = "इन दिनों कोविड महामारी की स्थिति के अनुसार, सर्वश्रेष्ठ लॉजिस्टिक्स सेवा प्रदाताओं को खोजना बहुत मुश्किल है, लॉजियो आपके लिए इन समस्याओं का समाधान करता है।";
     document.getElementById("detail-4").innerHTML = "यदि आप सर्वश्रेष्ठ लॉजिस्टिक्स सेवाओं की तलाश में हैं तो लॉजियो वास्तव में आपका मित्र है!"
+
+    document.getElementById("join-wait").innerHTML="प्रतीक्षा सूची में शामिल हों";
+    document.getElementById("comming-soon").innerHTML="एंड्रॉयड और आईओएस पर जल्द ही आ रहा है"
+    document.getElementById("join-btn").innerHTML = "शामिल हों";
+    document.getElementById('email').placeholder='अपना ईमेल दर्ज करें';
 }
 
 function languageMarathi() {
@@ -98,4 +109,11 @@ function languageMarathi() {
     document.getElementById("detail-2").innerHTML = "हे आपल्याला एकाच ठिकाणी आपले सर्व तपशील व्यवस्थित आणि व्यवस्थापित करण्यात मदत करते. यात प्रवेश करणे सोपे आहे आणि आपण या समर्पित अनुप्रयोगासह जाता जाता आपल्या ऑर्डरचा मागोवा घेऊ शकता.";
     document.getElementById("detail-3").innerHTML = "आजकाल कोविड साथीच्या परिस्थितीनुसार, सर्वोत्तम लॉजिस्टिक्स सेवा पुरवठादार शोधणे खूप अवघड आहे, लॉजियो तुमच्यासाठी या समस्या सोडवते.";
     document.getElementById("detail-4").innerHTML = "आपण सर्वोत्तम रसद सेवा शोधत असाल तर लॉजियो आपला मित्र आहे, खरंच!"
+
+
+    document.getElementById("join-wait").innerHTML="प्रतीक्षा यादीत सामील व्हा";
+    document.getElementById("comming-soon").innerHTML="एंड्रॉयड आणि  आईओएस वर लवकरच येत आहे";
+    document.getElementById("join-btn").innerHTML = "सामील व्हा";
+    document.getElementById('email').placeholder='तुमचा ईमेल टाका';
+
 }

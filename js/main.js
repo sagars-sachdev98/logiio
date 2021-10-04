@@ -137,41 +137,41 @@ $(function () {
 	$(formFields).on('focus', function () {
 		$(this).removeClass('input-error');
 	});
-	$('.contact-form form').submit(function (e) {
-		e.preventDefault();
-		$(formFields).removeClass('input-error');
-		var postdata = $('.contact-form form').serialize();
-		$.ajax({
-			type: 'POST',
-			url: 'php/contact.php',
-			data: postdata,
-			dataType: 'json',
-			success: function (json) {
+	// $('.contact-form form').submit(function (e) {
+	// 	e.preventDefault();
+	// 	$(formFields).removeClass('input-error');
+	// 	var postdata = $('.contact-form form').serialize();
+	// 	$.ajax({
+	// 		type: 'POST',
+	// 		url: 'php/mail.php',
+	// 		data: postdata,
+	// 		dataType: 'json',
+	// 		success: function (json) {
 
-				if (json.nameMessage !== '') {
-					$('.contact-form form .contact-name').addClass('input-error');
-				}
-				if (json.emailMessage !== '') {
-					$('.contact-form form .contact-email').addClass('input-error');
-				}
-				if (json.messageMessage !== '') {
-					$('.contact-form form textarea').addClass('input-error');
-				}
-				if (json.antispamMessage !== '') {
-					$('.contact-form form .contact-antispam').addClass('input-error');
-				}
-				if (json.nameMessage === '' && json.emailMessage === '' && json.messageMessage === '' && json.antispamMessage === '') {
+	// 			if (json.nameMessage !== '') {
+	// 				$('.contact-form form .contact-name').addClass('input-error');
+	// 			}
+	// 			if (json.emailMessage !== '') {
+	// 				$('.contact-form form .contact-email').addClass('input-error');
+	// 			}
+	// 			if (json.messageMessage !== '') {
+	// 				$('.contact-form form textarea').addClass('input-error');
+	// 			}
+	// 			if (json.antispamMessage !== '') {
+	// 				$('.contact-form form .contact-antispam').addClass('input-error');
+	// 			}
+	// 			if (json.nameMessage === '' && json.emailMessage === '' && json.messageMessage === '' && json.antispamMessage === '') {
 
-					$('.contact-form-success').slideDown();
+	// 				$('.contact-form-success').slideDown();
 
 
-					$('.contact-form form button').prop('disabled', true);
-					$('.contact-form form').find('input, textarea').val('');
+	// 				$('.contact-form form button').prop('disabled', true);
+	// 				$('.contact-form form').find('input, textarea').val('');
 
-				}
-			}
-		});
-	});
+	// 			}
+	// 		}
+	// 	});
+	// });
 
 
 

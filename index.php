@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Logiio - Your Transportation Friend</title>
+  <meta name="description" content="Coming Soon Landing Page" />
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/logiio-icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/logiio-icon.png" />
+  <link rel="manifest" href="img/favicons/site.html" />
+  <link rel="mask-icon" href="img/logiio-icon.png" color="#5bbad5" />
+  <link rel="shortcut icon" href="img/logiio-icon.png" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="msapplication-config" content="img/favicons/browserconfig.xml" />
+  <meta name="theme-color" content="#ffffff" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+  <style>
+    .alert {
+      margin-top: 80px;
+      background-color: #6AC47E !important;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+
+  <script>
+    function SubForm() {
+      $.ajax({
+        url: 'https://api.apispreadsheets.com/data/18893/',
+        type: 'post',
+        data: $("#myForm").serializeArray(),
+        success: function() {
+          console.log("Form Success")
+          window.location.href="";
+          document.cookie="dataSubmit=true"
+        },
+        error: function() {
+          alert("There was an error :(");
+          document.cookie="dataSubmit=false"
+        },
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <!--Hero section-->
+
+  <header class="hero-section" id="hero-section">
+    <!--navigation-->
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="position: sticky">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="img/logiio-logo-new.png" alt="Alpha"  /></a>
+        <!-- <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="icon-bar"></span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button> -->
+        <img class="navbar-toggler" src="./img/menu.png" alt="" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" width="30px" />
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <!-- <li class="nav-item">
+                <a
+                  class="btn btn-primary btn-modal feature"
+                  href="#"
+                  >Language</a
+                >
+              </li> -->
+
+            <div class="dropdown show">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span style="background: #bf66e5 !important" id="language-selector">Language</span>
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background: white">
+                <a class="dropdown-item" onclick="langaugeEnglish()">English</a>
+                <a class="dropdown-item" onclick="languageHindi()">हिंदी</a>
+                <a class="dropdown-item" onclick="languageMarathi()">मराठी</a>
+              </div>
+            </div>
+
+            <li class="nav-item">
+              <a class="btn btn-primary btn-modal support" href="#" data-toggle="modal" data-target="#contact-modal">Contact</a>
+              <a class="btn btn-primary btn-nav support" href="#hero-section" role="button">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <div class="alert alert-success " role="alert" id="alert">
+      Details submitted successfully!
+    </div> -->
+
+    <!--navigation end-->
+
+    <!--welcome message-->
+    <div class="pl-5 pr-5" style="margin-top: 10%">
+      <div class="row">
+        <div class="col-lg-5 col-md-5 col-sm-6" style="margin-top: 10%">
+          <h2 id="solve-title">What does Logiio Solve?</h2>
+          <p class="text-justify" id="loggio-p1">
+            Logiio is a mobile application that is designed especially for you
+            to bring unique solutions and fulfillment of the orders, assuring
+            great quality, speed, and reasonable cost. It has been built with
+            keeping end-to-end logistics in mind and it aims to provide
+            various unique solutions for all the right needs of the pickup and
+            delivery of a courier that simplifies your life and makes it
+            easier for on-the-go orders and delivery of parcels.
+          </p>
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-6">
+          <img src="img/lg-bg.png" class="text-center hero-img" alt="" />
+        </div>
+      </div>
+      <div class="mt-3">
+        <p id="loggio-p2">
+          Logiio combines people, processes, and technology into one system to
+          get the best results from all sources. The ultimate objective is to
+          get maximum value from every division within the business while
+          providing the highest customer satisfaction.
+        </p>
+        <p id="loggio-p3">
+          Logiio saves your time by reducing the paperwork and saving
+          order-related details. It also helps for live tracking of orders.
+        </p>
+      </div>
+
+      <div class="mt-5">
+        <h2 id="do-title">What does Logiio do?</h2>
+        <p id="do-p1">
+          Logiio provides end-to-end delivery services. It helps to save time
+          and hassle that comes with the parcel delivery of logistics. It has
+          a tracking system that monitors the whereabouts of each parcel at
+          all times according to your preferences, including orders and other
+          related details. There is also an order management system for users
+          who would like to track their orders.
+        </p>
+        <p id="do-p2">
+          Logiio helps in providing the best service by organizing and
+          managing the whole unorganized sector of logistics. You just have to
+          enter the weight, source, and destination of the parcel and it will
+          automatically calculate the cost for your service.
+        </p>
+      </div>
+
+      <div class="mt-5">
+        <h2 id="motto-title">Our Motto</h2>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <!-- <h2>Our Motto</h2> -->
+            <div class="motto-div">
+              <ul class="moto">
+                <li id="motto-1">
+                  To provide undisturbed easy and untroubled delivery services
+                </li>
+
+                <li id="motto-2">
+                  Live tracking for all orders and providing the best services
+                  at a reasonable cost.
+                </li>
+
+                <li id="motto-3">
+                  It’ll store all previous delivery history and other order
+                  related details, all under one roof
+                </li>
+
+                <li id="motto-4">To save your time and effort.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="motto-div">
+              <ul class="moto">
+                <li id="motto-5">
+                  We provide an end-to-end delivery - from your entered source
+                  and destination.
+                </li>
+                <li id="motto-6">
+                  With the effortless and smooth features of Logiio, you would
+                  be able to reduce paperwork and have a pleasant experience.
+                </li>
+                <li id="motto-7">
+                  To make a mobile application that is simple and easy to use.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <p id="detail-1">
+          Logiio allows you to store and access all your past order details
+          from anywhere, anytime. In simple words, Logiio is a mobile
+          application that gives you access to all your order-related
+          information, anytime and anywhere.
+        </p>
+        <p id="detail-2">
+          It helps you organize and manage all your details in a single place.
+          It's easy to access and you can also track your orders on the go
+          with this dedicated application.
+        </p>
+        <p id="detail-3">
+          These days as per the situation of the Covid pandemic, it’s very
+          difficult to find the best logistics service providers, Logiio
+          solves these problems for you.
+        </p>
+        <p id="detail-4">
+          If you are looking for the best logistics services then Logiio is
+          your friend, indeed!
+        </p>
+      </div>
+    </div>
+    <section class="hero-welcome-message text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 id="join-wait">Join the waiting list</h1>
+            <h2 id="comming-soon">Coming soon on Android and IOS</h2>
+
+            <!-- signup form-->
+            <div class="signup-form row justify-content-center">
+              <div class="col-lg-7 col-md-11">
+                <form id="mc-form">
+                  <div class="input-wrapper">
+                    <input type="email" class="form-control" placeholder="Enter your email" required id="email" aria-label="Recipient's email" />
+                    <button type="submit" name="submit" class="btn btn-primary" id="join-btn">
+                      Join
+                    </button>
+                  </div>
+                  <div id="mc-error">
+                    <i class="fas fa-exclamation-triangle"></i>Please enter a
+                    value
+                  </div>
+                  <div id="mc-success">
+                    <i class="fas fa-envelope"></i>Subscription confirmed
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <!-- signup form end-->
+
+            <!-- <img
+                src="img/hero-img.svg"
+                alt="hero-img"
+                class="text-center hero-img"
+              /> -->
+            <img src="img/logistics.png" alt="hero-img" class="text-center hero-img" />
+          </div>
+          <!-- <img src="anim/transport.gif" alt="hero-img" class="text-center hero-img"> </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!--welcome message end-->
+  </header>
+
+  <!--Hero section end-->
+
+  <!--Features-->
+
+  <!-- <section class="features section-spacing" id="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <header class="section-header">
+              <h2>Features</h2>
+              <h3>Best cross platform video player</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                vel porttitor mi. Class aptent taciti sociosqu ad litora
+                torquent per conubia nostra, per inceptos himenaeos. Etiam eros
+                justo, blandit nec neque at, ullamcorper convallis massa.
+              </p>
+            </header>
+          </div>
+          <div class="col-lg-7">
+            <ul class="row features-list text-center">
+              <li class="col-md-6">
+                <img src="img/feature-1.svg" alt="features" />
+                <h4>Gestures control</h4>
+              </li>
+              <li class="col-md-6">
+                <img src="img/feature-2.svg" alt="features" />
+                <h4>Supports subtitles</h4>
+              </li>
+              <li class="w-100 d-none d-md-block"></li>
+              <li class="col-md-6">
+                <img src="img/feature-3.svg" alt="features" />
+                <h4>Closed captions</h4>
+              </li>
+              <li class="col-md-6">
+                <img src="img/feature-4.svg" alt="features" />
+                <h4>Network streams</h4>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+  <!--Features end-->
+
+  <!--More Features-->
+
+  <!-- <section class="features-more section-spacing text-center">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="features-more-wrapper">
+              <h2>Easily zoom</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                ullamcorper interdum.
+              </p>
+              <img src="img/feature-more-1.svg" alt="more feature" />
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="features-more-wrapper">
+              <h2>Chromecast</h2>
+              <p>
+                Leget elit nulla. Purus euismod, commodo mauris convallis massa.
+                Proin porta mollis.
+              </p>
+              <img src="img/feature-more-2.svg" alt="more feature" />
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="features-more-wrapper">
+              <h2>Night Mode</h2>
+              <p>
+                Donec a nisi massa tincidunt bibendum. Aliquam ipsum nec euismod
+                velit mollis.
+              </p>
+              <img src="img/feature-more-3.svg" alt="more feature" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <section class="cta section-spacing">
+
+      <svg
+        width="100%"
+        height="300px"
+        viewBox="0 0 1200 300"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          class="curve"
+          stroke="#fff"
+          fill="none"
+          fill-rule="evenodd"
+          transform="translate(0,90)"
+        >
+          <path
+            id="glowPath"
+            d="M 0, 60 S 300, -60, 600, 60, 800, -120, 1200 60"
+          />
+          <path d="M 0, 60 S 200, -60, 400, 60, 900, -120, 1200 60" />
+          <path d="M 0, 60 S 200, -70, 400, 70, 800, -120, 1200 60" />
+        </g>
+      </svg>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <header class="section-header">
+              <h2>Get started</h2>
+              <h3>Be among the first to try the app</h3>
+            </header>
+          </div>
+          <div class="col-lg-4">
+            <div class="cta-button">
+              <a class="btn btn-primary" href="#hero-section" role="button"
+                >Join the waiting list</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+  <!--Footer-->
+
+  <footer class="site-footer section-spacing">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+        <img class="logo" src="img/logiio-logo-new.png" alt="Alpha"  /></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <!-- <ul class="terms-privacy">
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul> -->
+        </div>
+        <div class="col-lg-4 text-center">
+          <p>© 2021 Logiio  . All rights reserved.</p>
+        </div>
+        <div class="col-lg-4">
+          <ul class="social">
+            <!--Social-->
+            <li>
+              <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f fa-lg"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-github-alt fa-lg"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-stack-overflow fa-lg"></i></a>
+            </li>
+            <!--Social end-->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--Footer end-->
+
+  <!--contact form modal-->
+  <div id="snackbar">Congratulations! You have joined the waiting list.</div>
+
+  <div class="modal fade contact-modal" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="contact-form-modal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <header id="contact-form-modal">
+            <h2>Contact us</h2>
+            <h3>Have a questions? Send us a message.</h3>
+          </header>
+
+          <!--contact form-->
+
+          <div class="contact-form">
+            <p class="contact-form-success">
+              <i class="far fa-envelope-open"></i> Message sent. We will get
+              back to you soon.
+            </p>
+            <form id="myForm">
+            <label>Full Name</label>
+              <div class="form-group">
+                <input type="text" name="full_name" class="contact-name form-control input-lg" placeholder="Name" required />
+              </div>
+            <label>Email-Id</label>
+              <div class="form-group">
+                <input type="text" name="email" class="contact-name form-control input-lg" placeholder="Name" required />
+              </div>
+            <label>Contact Number</label>
+              <div class="form-group">
+                <input type="text" name="phone_number" class="contact-name form-control input-lg" placeholder="Name" required />
+              </div>
+            <label>Message</label>
+              <div class="form-group">
+                <textarea type="text" name="client_message" class="contact-name form-control input-lg" placeholder="Name" required ></textarea>
+              </div>
+            </form>
+            <button class="btn btn-success btn-md bg-success" onclick="SubForm()">Submit</button>
+            <!-- <form id="logiioForm">
+              <div class="form-group">
+                <input type="text" name="full_name" class="contact-name form-control input-lg" placeholder="Name" required />
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" class="contact-email form-control input-lg" placeholder="Email address" required />
+              </div>
+              <div class="form-group">
+                <input type="number" name="phone_number" class="contact-email form-control input-lg" placeholder="Contact Number" required />
+              </div>
+              <div class="form-group">
+                <input name="client_message" class="contact-message form-control input-lg" rows="3" placeholder="Message" required />
+              </div>
+              <button name="submit" onclick="SubForm()" class="btn btn-primary">
+                Send message
+              </button>
+            </form> -->
+          </div>
+
+          <!--contact form end-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--contact form modal end-->
+
+
+
+  <script>
+    $(document).ready(() => {
+      let cookieData = document.cookie.split(";");
+      let result = cookieData[0].split("=")[1];
+      debugger;
+      if (result == "true") {
+        myFunction();
+        document.cookie="dataSubmit=undefined"
+      }
+      if (result == "false") {
+        alert("Error submitting data")
+      }
+      
+    });
+
+
+    function myFunction() {
+      // Get the snackbar DIV
+      var x = document.getElementById("snackbar");
+
+      // Add the "show" class to DIV
+      x.className = "show";
+
+      // After 3 seconds, remove the show class from DIV
+      setTimeout(function() {
+        x.className = x.className.replace("show", "");
+      }, 10000);
+    }
+
+    // function SubForm() {
+    //   alert("Starte")
+    //   $.ajax({
+    //     url: 'https://api.apispreadsheets.com/data/18893/',
+    //     type: 'post',
+    //     data: $("#logiioForm").serializeArray(),
+    //     success: function() {
+    //       console.log("Data success --> ",data)
+    //       // OnSuccess(cartObject.productID)
+    //       alert("Success ho gaya bhai")
+    //     },
+    //     error: function() {
+    //       console.log("Data Fail --> ",data)
+    //     },
+    //     complete: function() {
+    //       // Handle the complete event
+    //       // alert("ajax completed " + cartObject.productID);
+    //       console.log("Task completed")
+    //       console.log("Data Fail --> ",data)
+    //     }
+    //   });
+    // }
+
+
+    // function SubForm() {
+    //   $.ajax({
+    //     url: 'https://api.apispreadsheets.com/data/18893/',
+    //     type: 'post',
+    //     data: $("#logiioForm").serializeArray(),
+    //     success: function() {
+    //       document.cookie = "formSubmit=true"
+    //       console.log("Success");
+    //       debugger;
+    //       alert("Form Data Submitted :)")
+    //     },
+    //     error: function() {
+    //       console.log("Error fail");
+    //       debugger;
+    //       alert("There was an error :(")
+    //     }
+    //   });
+    // }
+  </script>
+
+  <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
+  <!-- <script src="js/fontawesome-all.min.js"></script> -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="js/jquery.ajaxchimp.min.js"></script> -->
+  <!-- <script src="js/main.js"></script> -->
+  <!-- <script src="js/retina.min.js"></script> -->
+  <script src="js/service.js"></script>
+</body>
+
+<!-- Mirrored from csmthemes.com/themes/alpha/variants/variant-3/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Sep 2021 15:21:40 GMT -->
+
+</html>

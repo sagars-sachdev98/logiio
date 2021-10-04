@@ -1,3 +1,4 @@
+
 function langaugeEnglish() {
   document.getElementById("solve-title").innerHTML = "What does Logiio Solve?";
   document.getElementById("loggio-p1").innerHTML =
@@ -117,3 +118,4 @@ function languageMarathi() {
     document.getElementById('email').placeholder='तुमचा ईमेल टाका';
 
 }
+

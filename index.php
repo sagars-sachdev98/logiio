@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Logiio - Your Transportation Friend</title>
+  <title>Logiio - Logistics Made Easier</title>
   <meta name="description" content="Coming Soon Landing Page" />
   <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script> -->
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
@@ -41,12 +41,12 @@
         data: $("#myForm").serializeArray(),
         success: function() {
           console.log("Form Success")
-          window.location.href="";
-          document.cookie="dataSubmit=true"
+          window.location.href = "";
+          document.cookie = "dataSubmit=true"
         },
         error: function() {
           alert("There was an error :(");
-          document.cookie="dataSubmit=false"
+          document.cookie = "dataSubmit=false"
         },
       });
     }
@@ -62,7 +62,7 @@
     <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="position: sticky">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img class="logo" src="img/logiio-logo-new.png" alt="Alpha"  /></a>
+          <img class="logo" src="img/logiio-logo-self.png" alt="Alpha" /></a>
         <!-- <button
             class="navbar-toggler"
             type="button"
@@ -241,7 +241,8 @@
             <!-- signup form-->
             <div class="signup-form row justify-content-center">
               <div class="col-lg-7 col-md-11">
-                <form id="mc-form">
+                <a class="btn btn-primary btn-modal support btn-block mb-5" href="#" data-toggle="modal" data-target="#contact-modal" style="display: block;width: 100%;"><span id="join-list" style="background:#bf66e5!important">Join the list</span></a>
+                <!-- <form id="mc-form">
                   <div class="input-wrapper">
                     <input type="email" class="form-control" placeholder="Enter your email" required id="email" aria-label="Recipient's email" />
                     <button type="submit" name="submit" class="btn btn-primary" id="join-btn">
@@ -255,7 +256,7 @@
                   <div id="mc-success">
                     <i class="fas fa-envelope"></i>Subscription confirmed
                   </div>
-                </form>
+                </form> -->
               </div>
             </div>
 
@@ -266,7 +267,7 @@
                 alt="hero-img"
                 class="text-center hero-img"
               /> -->
-            <img src="img/logistics.png" alt="hero-img" class="text-center hero-img" />
+            <img src="img/logistics.png" alt="hero-img" class="text-center hero-img" style="margin-top: 5%;" />
           </div>
           <!-- <img src="anim/transport.gif" alt="hero-img" class="text-center hero-img"> </div> -->
         </div>
@@ -413,7 +414,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-        <img class="logo" src="img/logiio-logo-new.png" alt="Alpha"  /></a>
+          <img class="logo" src="img/logiio-logo-self.png" alt="Alpha" />
         </div>
       </div>
       <div class="row">
@@ -425,7 +426,7 @@
           </ul> -->
         </div>
         <div class="col-lg-4 text-center">
-          <p>© 2021 Logiio  . All rights reserved.</p>
+          <p>© 2021 Logiio . All rights reserved.</p>
         </div>
         <div class="col-lg-4">
           <ul class="social">
@@ -476,21 +477,21 @@
               back to you soon.
             </p>
             <form id="myForm">
-            <label>Full Name</label>
+              <label>Full Name</label>
               <div class="form-group">
                 <input type="text" name="full_name" class="contact-name form-control input-lg" placeholder="Name" required />
               </div>
-            <label>Email-Id</label>
+              <label>Email-Id</label>
               <div class="form-group">
                 <input type="text" name="email" class="contact-name form-control input-lg" placeholder="Name" required />
               </div>
-            <label>Contact Number</label>
+              <label>Contact Number</label>
               <div class="form-group">
                 <input type="text" name="phone_number" class="contact-name form-control input-lg" placeholder="Name" required />
               </div>
-            <label>Message</label>
+              <label>Message</label>
               <div class="form-group">
-                <textarea type="text" name="client_message" class="contact-name form-control input-lg" placeholder="Name" required ></textarea>
+                <textarea type="text" name="client_message" class="contact-name form-control input-lg" placeholder="Name" required></textarea>
               </div>
             </form>
             <button class="btn btn-success btn-md bg-success" onclick="SubForm()">Submit</button>
@@ -527,15 +528,15 @@
     $(document).ready(() => {
       let cookieData = document.cookie.split(";");
       let result = cookieData[0].split("=")[1];
-      debugger;
+      
       if (result == "true") {
         myFunction();
-        document.cookie="dataSubmit=undefined"
+        document.cookie = "dataSubmit=undefined"
       }
       if (result == "false") {
         alert("Error submitting data")
       }
-      
+
     });
 
 
@@ -584,12 +585,12 @@
     //     success: function() {
     //       document.cookie = "formSubmit=true"
     //       console.log("Success");
-    //       debugger;
+    //       
     //       alert("Form Data Submitted :)")
     //     },
     //     error: function() {
     //       console.log("Error fail");
-    //       debugger;
+    //       
     //       alert("There was an error :(")
     //     }
     //   });

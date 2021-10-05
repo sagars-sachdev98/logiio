@@ -34,8 +34,10 @@ function langaugeEnglish() {
 
     document.getElementById("join-wait").innerHTML="Join the waiting list";
     document.getElementById("comming-soon").innerHTML="Coming soon on Android and IOS"
-    document.getElementById("join-btn").innerHTML = "Join"
-    document.getElementById('email').placeholder='Enter your email';
+    // document.getElementById("join-btn").innerHTML = "Join"
+    // document.getElementById('email').placeholder='Enter your email';
+
+    document.getElementById("join-list").innerHTML="Join the list";
     
 }
 
@@ -75,8 +77,10 @@ function languageHindi() {
 
     document.getElementById("join-wait").innerHTML="प्रतीक्षा सूची में शामिल हों";
     document.getElementById("comming-soon").innerHTML="एंड्रॉयड और आईओएस पर जल्द ही आ रहा है"
-    document.getElementById("join-btn").innerHTML = "शामिल हों";
-    document.getElementById('email').placeholder='अपना ईमेल दर्ज करें';
+    // document.getElementById("join-btn").innerHTML = "शामिल हों";
+    // document.getElementById('email').placeholder='अपना ईमेल दर्ज करें';
+
+    document.getElementById("join-list").innerHTML="सूची में शामिल हों";
 }
 
 function languageMarathi() {
@@ -114,8 +118,10 @@ function languageMarathi() {
 
     document.getElementById("join-wait").innerHTML="प्रतीक्षा यादीत सामील व्हा";
     document.getElementById("comming-soon").innerHTML="एंड्रॉयड आणि  आईओएस वर लवकरच येत आहे";
-    document.getElementById("join-btn").innerHTML = "सामील व्हा";
-    document.getElementById('email').placeholder='तुमचा ईमेल टाका';
+    // document.getElementById("join-btn").innerHTML = "सामील व्हा";
+    // document.getElementById('email').placeholder='तुमचा ईमेल टाका';
+
+    document.getElementById("join-list").innerHTML="यादीत सामील व्हा";
 
 }
 

@@ -23,12 +23,12 @@ function langaugeEnglish() {
     document.getElementById("motto-4").innerHTML="To save your time and effort."
     document.getElementById("motto-5").innerHTML="We provide an end-to-end delivery - from your entered source and destination."
     document.getElementById("motto-6").innerHTML="With the effortless and smooth features of Logiio, you would be able to reduce paperwork and have a pleasant experience."
-    document.getElementById("motto-7").innerHTML="To make a mobile application that is simple and easy to use."
+    document.getElementById("motto-7").innerHTML="A mobile application that is simple and easy to use"
 
 
     // Details
     document.getElementById("detail-1").innerHTML = "Logiio allows you to store and access all your past order details from anywhere, anytime. In simple words, Logiio is a mobile application that gives you access to all your order-related information, anytime and anywhere.";
-    document.getElementById("detail-2").innerHTML = "It helps you organize and manage all your details in a single place. It's easy to access and you can also track your orders on the go with this dedicated application.";
+    document.getElementById("detail-2").innerHTML = "It helps to manage logistics as well as orders, their time to time pickup, and delivery providing a smooth and speedy functionality.";
     document.getElementById("detail-3").innerHTML = "These days as per the situation of the Covid pandemic, it’s very difficult to find the best logistics service providers, Logiio solves these problems for you. ";
     document.getElementById("detail-4").innerHTML = "If you are looking for the best logistics services then Logiio is your friend, indeed!"
 
@@ -66,12 +66,12 @@ function languageHindi() {
     document.getElementById("motto-4").innerHTML="अपना समय और प्रयास बचाने के लिए।"
     document.getElementById("motto-5").innerHTML="हम आपके द्वारा दर्ज किए गए स्रोत और गंतव्य से - एंड-टू-एंड डिलीवरी प्रदान करते हैं।"
     document.getElementById("motto-6").innerHTML="लॉजियो की सहज और सहज सुविधाओं के साथ, आप कागजी कार्रवाई को कम करने और सुखद अनुभव प्राप्त करने में सक्षम होंगे।"
-    document.getElementById("motto-7").innerHTML="एक ऐसा मोबाइल एप्लिकेशन बनाना जो सरल और उपयोग में आसान हो।"
+    document.getElementById("motto-7").innerHTML="एक ऐसा मोबाइल एप्लिकेशन जो सरल और उपयोग में आसान हो।"
 
 
     // Details
     document.getElementById("detail-1").innerHTML = "लॉजियो आपको कहीं से भी, कभी भी अपने सभी पिछले ऑर्डर विवरणों को स्टोर और एक्सेस करने की अनुमति देता है। सरल शब्दों में, लॉजियो एक मोबाइल एप्लिकेशन है जो आपको किसी भी समय और कहीं भी, आपके ऑर्डर से संबंधित सभी जानकारी तक पहुंच प्रदान करता है।";
-    document.getElementById("detail-2").innerHTML = "यह आपके सभी विवरणों को एक ही स्थान पर व्यवस्थित और प्रबंधित करने में आपकी सहायता करता है। इसे एक्सेस करना आसान है और आप इस समर्पित एप्लिकेशन के साथ चलते-फिरते अपने ऑर्डर ट्रैक भी कर सकते हैं।";
+    document.getElementById("detail-2").innerHTML = "यह लॉजिस्टिक्स के साथ-साथ ऑर्डर, उनके समय-समय पर पिकअप और डिलीवरी को सुचारू और तेज कार्यक्षमता प्रदान करने में मदद करता है।";
     document.getElementById("detail-3").innerHTML = "इन दिनों कोविड महामारी की स्थिति के अनुसार, सर्वश्रेष्ठ लॉजिस्टिक्स सेवा प्रदाताओं को खोजना बहुत मुश्किल है, लॉजियो आपके लिए इन समस्याओं का समाधान करता है।";
     document.getElementById("detail-4").innerHTML = "यदि आप सर्वश्रेष्ठ लॉजिस्टिक्स सेवाओं की तलाश में हैं तो लॉजियो वास्तव में आपका मित्र है!"
 
@@ -107,11 +107,11 @@ function languageMarathi() {
     document.getElementById("motto-4").innerHTML="आपला वेळ आणि मेहनत वाचवण्यासाठी."
     document.getElementById("motto-5").innerHTML="आम्ही एंटर-टू-एंड डिलिव्हरी प्रदान करतो-आपल्या प्रविष्ट केलेल्या स्त्रोत आणि गंतव्यस्थानावरून."
     document.getElementById("motto-6").innerHTML="लॉजियो च्या सहज आणि गुळगुळीत वैशिष्ट्यांसह, आपण पेपरवर्क कमी करण्यास आणि एक सुखद अनुभव घेण्यास सक्षम असाल."
-    document.getElementById("motto-7").innerHTML="मोबाइल अनुप्रयोग बनवणे जे सोपे आणि वापरण्यास सुलभ आहे."
+    document.getElementById("motto-7").innerHTML="मोबाइल अनुप्रयोग जे सोपे आणि वापरण्यास सुलभ आहे."
 
     // Details
     document.getElementById("detail-1").innerHTML = "लॉजियो आपल्याला आपल्या सर्व मागच्या ऑर्डरचे तपशील कोठूनही, कधीही संग्रहित करण्याची आणि प्रवेश करण्याची परवानगी देते. मध्ये सोप्या शब्दात, Logiio हा एक मोबाईल एप्लिकेशन आहे जो तुम्हाला तुमच्या सर्व ऑर्डरशी संबंधित प्रवेश देतो माहिती, कधीही आणि कुठेही";
-    document.getElementById("detail-2").innerHTML = "हे आपल्याला एकाच ठिकाणी आपले सर्व तपशील व्यवस्थित आणि व्यवस्थापित करण्यात मदत करते. यात प्रवेश करणे सोपे आहे आणि आपण या समर्पित अनुप्रयोगासह जाता जाता आपल्या ऑर्डरचा मागोवा घेऊ शकता.";
+    document.getElementById("detail-2").innerHTML = "हे रसद तसेच ऑर्डर, त्यांचे वेळोवेळी पिकअप आणि वितरण सुलभ आणि वेगवान कार्यक्षमता प्रदान करण्यात मदत करते.";
     document.getElementById("detail-3").innerHTML = "आजकाल कोविड साथीच्या परिस्थितीनुसार, सर्वोत्तम लॉजिस्टिक्स सेवा पुरवठादार शोधणे खूप अवघड आहे, लॉजियो तुमच्यासाठी या समस्या सोडवते.";
     document.getElementById("detail-4").innerHTML = "आपण सर्वोत्तम रसद सेवा शोधत असाल तर लॉजियो आपला मित्र आहे, खरंच!"
 

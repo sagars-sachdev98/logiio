@@ -88,7 +88,7 @@
 
             <div class="dropdown show">
               <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span style="background: #bf66e5 !important" id="language-selector">Language</span>
+                <span style="background: #bf66e5 !important" id="language-selector">Language <img src="./img/global.png" alt="" width="20px" style="background:#bf66e5!important"></span>
               </a>
 
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background: white">
@@ -114,7 +114,7 @@
     <!--navigation end-->
 
     <!--welcome message-->
-    <div class="pl-5 pr-5" style="margin-top: 10%">
+    <div class="pl-5 pr-5" style="margin-top: 6%">
       <div class="row">
         <div class="col-lg-5 col-md-5 col-sm-6" style="margin-top: 10%">
           <h2 id="solve-title">What does Logiio Solve?</h2>
@@ -200,7 +200,7 @@
                   be able to reduce paperwork and have a pleasant experience.
                 </li>
                 <li id="motto-7">
-                  To make a mobile application that is simple and easy to use.
+                  A mobile application that is simple and easy to use.
                 </li>
               </ul>
             </div>
@@ -216,9 +216,8 @@
           information, anytime and anywhere.
         </p>
         <p id="detail-2">
-          It helps you organize and manage all your details in a single place.
-          It's easy to access and you can also track your orders on the go
-          with this dedicated application.
+          It helps to manage logistics as well as orders, their time to
+          time pickup, and delivery providing a smooth and speedy functionality.
         </p>
         <p id="detail-3">
           These days as per the situation of the Covid pandemic, it’s very
@@ -528,7 +527,7 @@
     $(document).ready(() => {
       let cookieData = document.cookie.split(";");
       let result = cookieData[0].split("=")[1];
-      
+
       if (result == "true") {
         myFunction();
         document.cookie = "dataSubmit=undefined"

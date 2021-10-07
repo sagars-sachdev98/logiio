@@ -62,7 +62,7 @@
     <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="position: sticky">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img class="logo" src="img/logiio-logo-self.png" alt="Alpha" /></a>
+          <img class="logo" src="img/logiio-logo-self-nw1.png" alt="Alpha" /></a>
         <!-- <button
             class="navbar-toggler"
             type="button"
@@ -116,7 +116,7 @@
     <!--welcome message-->
     <div class="pl-5 pr-5" style="margin-top: 6%">
       <div class="row">
-        <div class="col-lg-5 col-md-5 col-sm-6" style="margin-top: 10%">
+        <div class="col-lg-5 col-md-5 col-sm-6" style="margin-top: 5%">
           <h2 id="solve-title">What does Logiio Solve?</h2>
           <p class="text-justify" id="loggio-p1">
             Logiio is a mobile application that is designed especially for you
@@ -413,7 +413,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <img class="logo" src="img/logiio-logo-self.png" alt="Alpha" />
+          <img class="logo" src="img/logiio-logo-self-nw1.png" alt="Alpha" />
         </div>
       </div>
       <div class="row">

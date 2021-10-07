@@ -83,7 +83,7 @@ input,textarea{
       margin-left: 20px;
   }
   .logo{
-    width: 280px;
+    width: 150px;
   }
   @media only screen and (min-width: 320px) and (max-width: 790px){
       #snackbar{

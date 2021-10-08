@@ -1,124 +1,168 @@
-html, body{
-    font-family: Arial, Helvetica, sans-serif!important;
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif !important;
 }
-*,.navbar{
-    background: black!important;
-    color: white
+*,
+.navbar {
+  background: black !important;
+  color: white;
 }
-p{
-    color: rgb(233, 232, 232)!important;
+p {
+  color: rgb(233, 232, 232) !important;
 }
-.support{
-    background-color: #bf66e5!important ;
-    border: 1px solid #bf66e5!important;
+.support {
+  background-color: #bf66e5 !important ;
+  border: 1px solid #bf66e5 !important;
 }
-.feature{
-    border: 2px solid #bf66e5!important;
-    color: white!important;
-    background: black!important;
+.feature {
+  border: 2px solid #bf66e5 !important;
+  color: white !important;
+  background: black !important;
 }
-.dropdown-toggle{
-    padding: .5rem 2rem!important;
-    background-color: #bf66e5!important ;
-    border: 1px solid #bf66e5!important;
+.dropdown-toggle {
+  padding: 0.5rem 2rem !important;
+  background-color: #bf66e5 !important ;
+  border: 1px solid #bf66e5 !important;
 }
-.dropdown-menu .dropdown-item{
-    font-size: 17px;
-    font-weight: bold;
-    line-height: 2;
-    background: white!important;
+.dropdown-menu .dropdown-item {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 2;
+  background: white !important;
 }
-.dropdown-menu{
-    background: white!important;
+.dropdown-menu {
+  background: white !important;
 }
-.dropdown-menu .dropdown-item:hover{
-    background: rgb(229, 231, 231)!important;
+.dropdown-menu .dropdown-item:hover {
+  background: rgb(229, 231, 231) !important;
 }
-h1, h2, h3, h4, h5, h6{
-    color: white!important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white !important;
 }
-.moto li{
-    list-style-type: disc!important;
-    line-height: 2;
-    text-align: justify;
+.moto li {
+  list-style-type: disc !important;
+  line-height: 2;
+  text-align: justify;
 }
-.motto-div{
-    padding: 30px;
+.motto-div {
+  padding: 30px;
 }
-.navbar-toggler{
-    width: 60px;
+.navbar-toggler {
+  width: 60px;
 }
-input,textarea{
-    color: white!important;
+input,
+textarea {
+  color: white !important;
 }
 /* The snackbar - position it at the bottom and in the middle of the screen */
 #snackbar {
-    visibility: hidden; /* Hidden by default. Visible on click */
-    min-width: 250px; /* Set a default minimum width */
-    margin-left: -125px; /* Divide value of min-width by 2 */
-    background-color: rgb(6, 160, 26)!important; /* Black background color */
-    color: rgb(255, 255, 255); /* White text color */
-    text-align: center; /* Centered text */
-    border-radius: 2px; /* Rounded borders */
-    padding: 16px; /* Padding */
-    position: fixed; /* Sit on top of the screen */
-    z-index: 1; /* Add a z-index if needed */
-    left: 50%; /* Center the snackbar */
-    bottom: 30px; /* 30px from the bottom */
-    border-radius: 8px;
-  }
-  
-  /* Show the snackbar when clicking on a button (class added with JavaScript) */
-  #snackbar.show {
-    visibility: visible; /* Show the snackbar */
-    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: rgb(6, 160, 26) !important; /* Black background color */
+  color: rgb(255, 255, 255); /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+  border-radius: 8px;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
     However, delay the fade out process for 2.5 seconds */
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+form {
+  text-align: left;
+}
+label {
+  margin-left: 20px;
+}
+.logo {
+  width: 150px;
+}
+@media only screen and (min-width: 320px) and (max-width: 790px) {
+  #snackbar {
+    max-width: 281px;
+    min-width: 280px;
   }
-  form{
-      text-align: left;
-  }
-  label{
-      margin-left: 20px;
-  }
-  .logo{
+  .logo {
     width: 150px;
   }
-  @media only screen and (min-width: 320px) and (max-width: 790px){
-      #snackbar{
-        max-width: 281px;
-        min-width: 280px;
-      }
-      .logo{
-        width: 150px;
-      }
-      p{
-          text-align: justify;
-      }
+  p {
+    text-align: justify;
   }
-  @media only screen and (min-width:760) and (max-width:900){
-      .hero-img{
-          margin-top: 52%!important;
-      }
+}
+@media only screen and (min-width: 760) and (max-width: 900) {
+  .hero-img {
+    margin-top: 52% !important;
   }
-  /* Animations to fade the snackbar in and out */
-  @-webkit-keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
+}
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
   }
-  
-  @keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
+  to {
+    bottom: 30px;
+    opacity: 1;
   }
-  
-  @-webkit-keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
   }
-  
-  @keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
+  to {
+    bottom: 30px;
+    opacity: 1;
   }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

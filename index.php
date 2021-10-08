@@ -486,7 +486,7 @@
               </div>
               <label>Contact Number</label>
               <div class="form-group">
-                <input type="text" name="phone_number" class="contact-name form-control input-lg" placeholder="Name" required />
+                <input type="number" name="phone_number" id="phone" class="contact-name form-control input-lg" placeholder="Name" required />
               </div>
               <label>Message</label>
               <div class="form-group">
@@ -524,6 +524,24 @@
 
 
   <script>
+    $("#phone").keydown(function(event) {
+      k = event.which;
+      if ((k >= 96 && k <= 105) || k == 8) {
+        if ($(this).val().length == 10) {
+          if (k == 8) {
+            return true;
+          } else {
+            event.preventDefault();
+            return false;
+
+          }
+        }
+      } else {
+        event.preventDefault();
+        return false;
+      }
+
+    });
     $(document).ready(() => {
       let cookieData = document.cookie.split(";");
       let result = cookieData[0].split("=")[1];
